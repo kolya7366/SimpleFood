@@ -3,6 +3,16 @@
 @import 'reset';
 @import 'global';
 
+.btn-base {
+  background-color: $accent;
+  border-radius: 6px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 130%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
 .header {
   padding: 60px 0;
 
@@ -89,5 +99,136 @@
     color: #fff;
   }
 }
+
+.footer {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 60px;
+  }
+
+  &__input-email {
+    display: block;
+    margin: 30px auto 12px;
+    background-color: #FFFFFF;
+    border: 1px solid #C2C2C2;
+    border-radius: 5px;
+    width: 200px;
+    height: 44px;
+    font-size: 14px;
+    line-height: 130%;
+    color: #C2C2C2;
+    opacity: 0.9;
+    padding-left: 15px;
+  }
+
+  &__btn-base {
+    position: relative;
+    width: 200px;
+    height: 44px;
+    border-radius: 5px;
+  }
+
+  &__btn-base::before {
+    content: "";
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    background-image: url('../images/footer_icons/send-btn.svg');
+    left: 25px;
+  }
+
+  &__top-items {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, minmax(50px, auto));
+    grid-row-gap: 20px;
+    grid-column-gap: 70px;
+    font-size: 18px;
+    line-height: 130%;
+    letter-spacing: 0.01em;
+  }
+
+  &__bottom {
+    padding: 30px 0;
+    border-top: 1px solid rgba(194, 194, 194, 0.2);
+    border-top-color: 0.8;
+    text-align: center;
+    font-size: 14px;
+    line-height: 100%;
+    
+    &__bottom-info {
+      opacity: 1;
+      color: #31352B;
+    }
+  }
+}
+
+.social {
+  font-size: 16px;
+  line-height: 200%;
+  letter-spacing: 0.01em;
+  margin-right: 77px;
+
+  &__item {
+    padding-left: 30px;
+    position: relative;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  &__contact::before {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 0;
+    top: 4px;
+  }
+
+  &__contact--location::before {
+    background-image: url('../images/footer_icons/location.svg');
+  }
+
+  &__contact--phone::before {
+    background-image: url('../images/footer_icons/calling.svg');
+  }
+
+  &__contact--email::before {
+    background-image: url('../images/footer_icons/message.svg');
+  }
+
+  &__icons {
+    display: flex;
+  }
+
+  &__link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border-bottom: 50%;
+  }
+
+  &__link:not(:last-child) {
+    margin-right: 13px;
+  }
+
+  &__link--facebook {
+    background-image: url('../images/footer_icons/facebook.png');
+  }
+  &__link--twitter {
+    background-image: url('../images/footer_icons/twitter.png');
+  }
+  &__link--instagram {
+    background-image: url('../images/footer_icons/instagram.png');
+  }
+}
+
+
 
 @import 'media';
