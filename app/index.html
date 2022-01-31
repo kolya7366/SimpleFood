@@ -65,24 +65,25 @@
           <h2 class="title menu--title">Популярные категории</h2>
           <ul class="menu__filters">
             <li class="menu__filter">
-              <button class="menu__btn menu__btn--burger" type="button">Бургеры</button>
+              <button class="menu__btn menu__btn--burger" type="button" data-filter=".item-burger">Бургеры</button>
             </li>
             <li class="menu__filter">
-              <button class="menu__btn menu__btn--pizza" type="button">Пицца</button>
+              <button class="menu__btn menu__btn--pizza" type="button" data-filter=".item-pizza">Пицца</button>
             </li>
             <li class="menu__filter">
-              <button class="menu__btn menu__btn--sandwich" type="button">Сендвичи</button>
+              <button class="menu__btn menu__btn--sandwich" type="button" data-filter=".item-sandwich">Сендвичи</button>
             </li>
             <li class="menu__filter">
-              <button class="menu__btn menu__btn--asia" type="button">Азиатская кухня</button>
+              <button class="menu__btn menu__btn--asia" type="button" data-filter=".item-asia">Азиатская кухня</button>
             </li>
             <li class="menu__filter">
-              <button class="menu__btn menu__btn--dish" type="button">Cеты</button>
+              <button class="menu__btn menu__btn--dish" type="button"
+              data-filter=".item-dish">Cеты</button>
             </li>
           </ul>
         </div>
         <ul class="menu__gallery">
-          <li class="menu__item">
+          <li class="menu__item mix item-burger">
             <img class="menu__item-foto" src="./images/menu/item-foto/item_01.png" alt="Фотография: Чизбургер с листьями салата" style="width: 140px; height: 140px;">
             <h3 class="menu__item-title">Чизбургер с листьями салата</h3>
             <div class="menu__info">
@@ -90,7 +91,7 @@
               <button class="btn-base menu--btn-base" type="button">В корзину</button>
             </div>
           </li>
-          <li class="menu__item">
+          <li class="menu__item mix item-burger">
             <img class="menu__item-foto" src="./images/menu/item-foto/item_02.png" alt="Фотография: Бифбургер" style="width: 140px; height: 140px;">
             <h3 class="menu__item-title">Бифбургер</h3>
             <div class="menu__info">
@@ -98,7 +99,7 @@
               <button class="btn-base menu--btn-base" type="button">В корзину</button>
             </div>
           </li>
-          <li class="menu__item">
+          <li class="menu__item mix item-burger">
             <img class="menu__item-foto" src="./images/menu/item-foto/item_03.png" alt="Фотография: Королевский чизбургер" style="width: 140px; height: 140px;">
             <h3 class="menu__item-title">Королевский чизбургер</h3>
             <div class="menu__info">
@@ -106,7 +107,7 @@
               <button class="btn-base menu--btn-base" type="button">В корзину</button>
             </div>
           </li>
-          <li class="menu__item">
+          <li class="menu__item mix item-pizza">
             <img class="menu__item-foto" src="./images/menu/item-foto/item_04.png" alt="Фотография: Черный гамбургер" style="width: 140px; height: 140px;">
             <h3 class="menu__item-title">Черный гамбургер</h3>
             <div class="menu__info">
@@ -114,7 +115,7 @@
               <button class="btn-base menu--btn-base" type="button">В корзину</button>
             </div>
           </li>
-          <li class="menu__item">
+          <li class="menu__item mix item-sandwich">
             <img class="menu__item-foto" src="./images/menu/item-foto/item_05.png" alt="Фотография: Чикен бургер" style="width: 140px; height: 140px;">
             <h3 class="menu__item-title">Чикен бургер</h3>
             <div class="menu__info">
@@ -122,7 +123,7 @@
               <button class="btn-base menu--btn-base" type="button">В корзину</button>
             </div>
           </li>
-          <li class="menu__item">
+          <li class="menu__item mix item-asia">
             <img class="menu__item-foto" src="./images/menu/item-foto/item_01.png" alt="Фотография: Чизбургер с листьями салата" style="width: 140px; height: 140px;">
             <h3 class="menu__item-title">Чизбургер с листьями салата</h3>
             <div class="menu__info">
@@ -130,7 +131,7 @@
               <button class="btn-base menu--btn-base" type="button">В корзину</button>
             </div>
           </li>
-          <li class="menu__item">
+          <li class="menu__item mix item-asia">
             <img class="menu__item-foto" src="./images/menu/item-foto/item_02.png" alt="Фотография: Бифбургер" style="width: 140px; height: 140px;">
             <h3 class="menu__item-title">Бифбургер</h3>
             <div class="menu__info">
@@ -138,7 +139,7 @@
               <button class="btn-base menu--btn-base" type="button">В корзину</button>
             </div>
           </li>
-          <li class="menu__item">
+          <li class="menu__item mix item-asia">
             <img class="menu__item-foto" src="./images/menu/item-foto/item_03.png" alt="Фотография: Королевский чизбургер" style="width: 140px; height: 140px;">
             <h3 class="menu__item-title">Королевский чизбургер</h3>
             <div class="menu__info">
@@ -146,7 +147,7 @@
               <button class="btn-base menu--btn-base" type="button">В корзину</button>
             </div>
           </li>
-          <li class="menu__item">
+          <li class="menu__item mix item-dish">
             <img class="menu__item-foto" src="./images/menu/item-foto/item_04.png" alt="Фотография: Черный гамбургер" style="width: 140px; height: 140px;">
             <h3 class="menu__item-title">Черный гамбургер</h3>
             <div class="menu__info">
@@ -154,7 +155,7 @@
               <button class="btn-base menu--btn-base" type="button">В корзину</button>
             </div>
           </li>
-          <li class="menu__item">
+          <li class="menu__item mix item-dish">
             <img class="menu__item-foto" src="./images/menu/item-foto/item_05.png" alt="Фотография: Чикен бургер" style="width: 140px; height: 140px;">
             <h3 class="menu__item-title">Чикен бургер</h3>
             <div class="menu__info">
@@ -240,5 +241,6 @@
   </footer>
   
   <script src="js/main.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
 </body>
 </html>

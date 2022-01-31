@@ -530,35 +530,21 @@
   }
 }
 
-.menu {
-  &__btn {
-    transition: 0.3s;
-
-    &:focus,
-    &:hover,
-    &:active {
-      text-decoration-line: none;
-    }
-
-    &:hover {
-      background-color: rgba(255, 122, 80, 0.1);
-      box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
-    }
-
-    &:active {
-      transition: 0.2s;
-      background: #FFFFFF;
-      box-shadow: inset 0 -5px 12px rgba(255, 104, 56, 0.2);
-    }
-
-    &--active {
-      background-color: $accent
-    }
+.mixitup-control-active {
+  &:focus {
+    transition: 0.4s;
+    box-shadow: none;
+    background-color: $accent;
   }
 
-  &__item:hover {
-    transition: 0.30s;
-    background-color: #FFF
+  &:hover {
+    background-color: rgba(255, 122, 80, 0.1);
+    box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+  }
+
+  &:active {
+    background: #FFFFFF;
+    box-shadow: inset 0 -5px 12px rgba(255, 104, 56, 0.2);
   }
 }
 
@@ -618,6 +604,7 @@
     box-shadow: none;
   }
 }
+
 
 
 @import 'media';
