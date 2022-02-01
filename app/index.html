@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,157 +10,161 @@
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
+  <h1 class="title-global">Доставка еды</h1>
   <header class="header">
     <div class="container">
-      <div class="header__inner">
+      <nav class="header__inner">
         <a class="logo" href="#">
-          <img class="logo__img" src="images/logo.png" alt="Логотип" style="width: 200px; height: 39px; margin-left: 5px;">
+          <img class="logo__img" src="images/logo.svg" alt="Логотип" width=200px height=39px>
         </a>
-        <div class="header__nav">
-          <ul class="header__items">
-            <li class="header__item">
-              <a class="header__item-link header__item-link--active" href="#">Главная</a>
-            </li>
-            <li class="header__item">
-              <a class="header__item-link" href="#">Блюда</a>
-            </li>
-            <li class="header__item">
-              <a class="header__item-link" href="#">Контакты</a>
-            </li>
-          </ul>
-          <div class="header__icons">
-            <a class="header__icon header__icon--search" href="#" aria-label="Поиск по сайту"></a>
-            <a class="header__icon header__icon--cart" href="#" aria-label="Корзина">
-              <span class="header__icon-num" aria-label="Количество товаров в корзине: {{  }}">4</span>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="header__content">
-        <div class="header__wrap">
-          <h1 class="header__title">доставка
-            <br>
-            <span class="header__title--accent">
-              за 15 минут
-            </span>
-          </h1>
-          <span class="header__info">
-            Самый быстрый сервис доставки еды в вашем городе. Не уложимся в срок - доставка за наш счёт
-          </span>
-          <div class="header__click">
-            <button class="btn-base header--btn-base">Заказать</button>
-            <a class="base-link" href="#">Подробнее</a>
-          </div>
-        </div>
-        <div class="header__images" alt="Фоновая картинка: Доставщик на желтом скутере" style="width: 550px; height: 660px; margin-right: 10px;">
-        </div>
-      </div>
+        <ul class="menu">
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Блюда</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__item-link" href="#">Контакты</a>
+          </li>
+          <li class="menu__item">
+            <button class="menu__icon menu__icon--search" href="#" aria-label="Поиск по сайту"></button>
+          </li>
+          <li class="menu__item">
+            <button class="menu__icon menu__icon--cart" href="#" aria-label="Корзина">
+              <span class="menu__icon-num"">4</span>
+            </button>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
+  <section class="hero">
+    <div class="container">
+      <div class="hero__contant">
+        <div class="hero__inner">
+          <h1 class="hero__title">доставка
+          <br>
+          <span class="hero__title--accent">
+            за 15 минут
+          </span>
+        </h1>
+        <p class="hero__info">
+          Самый быстрый сервис доставки еды в вашем городе. Не уложимся в срок - доставка за наш счёт
+        </p>
+        <div class="hero__click">
+          <a class="hero__scroll" href="#menu-product">Заказать</a>
+          <a class="base-link" href="#">Подробнее</a>
+        </div>
+        </div>
+        <div class="hero__image-bg"></div>
+      </div>
+    </div>
+  </section>
   
   <main class="main">
-    <div class="menu">
+    <div class="menu-product" id="menu-product">
       <div class="container">
-        <div class="menu__inner">
-          <h2 class="title menu--title">Популярные категории</h2>
-          <ul class="menu__filters">
-            <li class="menu__filter">
-              <button class="menu__btn menu__btn--burger" type="button" data-filter=".item-burger">Бургеры</button>
+        <div class="menu-product__inner">
+          <h2 class="title menu-product--title">Популярные категории</h2>
+          <ul class="menu-product__filters">
+            <li class="menu-product__filter">
+              <button class="menu-product__btn menu-product__btn--burger" type="button" data-filter=".item-burger">Бургеры</button>
             </li>
-            <li class="menu__filter">
-              <button class="menu__btn menu__btn--pizza" type="button" data-filter=".item-pizza">Пицца</button>
+            <li class="menu-product__filter">
+              <button class="menu-product__btn menu-product__btn--pizza" type="button" data-filter=".item-pizza">Пицца</button>
             </li>
-            <li class="menu__filter">
-              <button class="menu__btn menu__btn--sandwich" type="button" data-filter=".item-sandwich">Сендвичи</button>
+            <li class="menu-product__filter">
+              <button class="menu-product__btn menu-product__btn--sandwich" type="button" data-filter=".item-sandwich">Сендвичи</button>
             </li>
-            <li class="menu__filter">
-              <button class="menu__btn menu__btn--asia" type="button" data-filter=".item-asia">Азиатская кухня</button>
+            <li class="menu-product__filter">
+              <button class="menu-product__btn menu-product__btn--asia" type="button" data-filter=".item-asia">Азиатская кухня</button>
             </li>
-            <li class="menu__filter">
-              <button class="menu__btn menu__btn--dish" type="button"
+            <li class="menu-product__filter">
+              <button class="menu-product__btn menu-product__btn--dish" type="button"
               data-filter=".item-dish">Cеты</button>
             </li>
           </ul>
         </div>
-        <ul class="menu__gallery">
-          <li class="menu__item mix item-burger">
-            <img class="menu__item-foto" src="./images/menu/item-foto/item_01.png" alt="Фотография: Чизбургер с листьями салата" style="width: 140px; height: 140px;">
-            <h3 class="menu__item-title">Чизбургер с листьями салата</h3>
-            <div class="menu__info">
-              <span class="menu__price">160 руб.</span>
-              <button class="btn-base menu--btn-base" type="button">В корзину</button>
+        <ul class="menu-product__gallery">
+          <li class="menu-product__item mix item-burger">
+            <img class="menu-product__item-foto" src="./images/menu/item-foto/item_01.png" alt="Фотография: Чизбургер с листьями салата" style="width: 140px; height: 140px;">
+            <h3 class="menu-product__item-title">Чизбургер с листьями салата</h3>
+            <div class="menu-product__info">
+              <span class="menu-product__price">160 руб.</span>
+              <button class="btn-base menu-product--btn-base" type="button">В корзину</button>
             </div>
           </li>
-          <li class="menu__item mix item-burger">
-            <img class="menu__item-foto" src="./images/menu/item-foto/item_02.png" alt="Фотография: Бифбургер" style="width: 140px; height: 140px;">
-            <h3 class="menu__item-title">Бифбургер</h3>
-            <div class="menu__info">
-              <span class="menu__price">190 руб.</span>
-              <button class="btn-base menu--btn-base" type="button">В корзину</button>
+          <li class="menu-product__item mix item-burger">
+            <img class="menu-product__item-foto" src="./images/menu/item-foto/item_02.png" alt="Фотография: Бифбургер" style="width: 140px; height: 140px;">
+            <h3 class="menu-product__item-title">Бифбургер</h3>
+            <div class="menu-product__info">
+              <span class="menu-product__price">190 руб.</span>
+              <button class="btn-base menu-product--btn-base" type="button">В корзину</button>
             </div>
           </li>
-          <li class="menu__item mix item-burger">
-            <img class="menu__item-foto" src="./images/menu/item-foto/item_03.png" alt="Фотография: Королевский чизбургер" style="width: 140px; height: 140px;">
-            <h3 class="menu__item-title">Королевский чизбургер</h3>
-            <div class="menu__info">
-              <span class="menu__price">260 руб.</span>
-              <button class="btn-base menu--btn-base" type="button">В корзину</button>
+          <li class="menu-product__item mix item-burger">
+            <img class="menu-product__item-foto" src="./images/menu/item-foto/item_03.png" alt="Фотография: Королевский чизбургер" style="width: 140px; height: 140px;">
+            <h3 class="menu-product__item-title">Королевский чизбургер</h3>
+            <div class="menu-product__info">
+              <span class="menu-product__price">260 руб.</span>
+              <button class="btn-base menu-product--btn-base" type="button">В корзину</button>
             </div>
           </li>
-          <li class="menu__item mix item-pizza">
-            <img class="menu__item-foto" src="./images/menu/item-foto/item_04.png" alt="Фотография: Черный гамбургер" style="width: 140px; height: 140px;">
-            <h3 class="menu__item-title">Черный гамбургер</h3>
-            <div class="menu__info">
-              <span class="menu__price">199 руб.</span>
-              <button class="btn-base menu--btn-base" type="button">В корзину</button>
+          <li class="menu-product__item mix item-pizza item-burger">
+            <img class="menu-product__item-foto" src="./images/menu/item-foto/item_04.png" alt="Фотография: Черный гамбургер" style="width: 140px; height: 140px;">
+            <h3 class="menu-product__item-title">Черный гамбургер</h3>
+            <div class="menu-product__info">
+              <span class="menu-product__price">199 руб.</span>
+              <button class="btn-base menu-product--btn-base" type="button">В корзину</button>
             </div>
           </li>
-          <li class="menu__item mix item-sandwich">
-            <img class="menu__item-foto" src="./images/menu/item-foto/item_05.png" alt="Фотография: Чикен бургер" style="width: 140px; height: 140px;">
-            <h3 class="menu__item-title">Чикен бургер</h3>
-            <div class="menu__info">
+          <li class="menu-product__item mix item-sandwich item-burger">
+            <img class="menu-product__item-foto" src="./images/menu/item-foto/item_05.png" alt="Фотография: Чикен бургер" style="width: 140px; height: 140px;">
+            <h3 class="menu-product__item-title">Чикен бургер</h3>
+            <div class="menu-product__info">
+              <span class="menu-product__price">180 руб.</span>
+              <button class="btn-base menu-product--btn-base" type="button">В корзину</button>
+            </div>
+          </li>
+          <li class="menu-product__item mix item-asia item-burger">
+            <img class="menu-product__item-foto" src="./images/menu/item-foto/item_01.png" alt="Фотография: Чизбургер с листьями салата" style="width: 140px; height: 140px;">
+            <h3 class="menu-product__item-title">Чизбургер с листьями салата</h3>
+            <div class="menu-product__info">
+              <span class="menu-product__price">160 руб.</span>
+              <button class="btn-base menu-product--btn-base" type="button">В корзину</button>
+            </div>
+          </li>
+          <li class="menu-product__item mix item-asia item-burger">
+            <img class="menu-product__item-foto" src="./images/menu/item-foto/item_02.png" alt="Фотография: Бифбургер" style="width: 140px; height: 140px;">
+            <h3 class="menu-product__item-title">Бифбургер</h3>
+            <div class="menu-product__info">
+              <span class="menu-product__price">190 руб.</span>
+              <button class="btn-base menu-product--btn-base" type="button">В корзину</button>
+            </div>
+          </li>
+          <li class="menu-product__item mix item-asia item-burger">
+            <img class="menu-product__item-foto" src="./images/menu/item-foto/item_03.png" alt="Фотография: Королевский чизбургер" style="width: 140px; height: 140px;">
+            <h3 class="menu-product__item-title">Королевский чизбургер</h3>
+            <div class="menu-product__info">
+              <span class="menu-product__price">260 руб.</span>
+              <button class="btn-base menu-product--btn-base" type="button">В корзину</button>
+            </div>
+          </li>
+          <li class="menu-product__item mix item-dish item-burger">
+            <img class="menu-product__item-foto" src="./images/menu/item-foto/item_04.png" alt="Фотография: Черный гамбургер" style="width: 140px; height: 140px;">
+            <h3 class="menu-product__item-title">Черный гамбургер</h3>
+            <div class="menu-product__info">
+              <span class="menu-product__price">199 руб.</span>
+              <button class="btn-base menu-product--btn-base" type="button">В корзину</button>
+            </div>
+          </li>
+          <li class="menu-product__item mix item-dish item-burger">
+            <img class="menu-product__item-foto" src="./images/menu/item-foto/item_05.png" alt="Фотография: Чикен бургер" style="width: 140px; height: 140px;">
+            <h3 class="menu-product__item-title">Чикен бургер</h3>
+            <div class="menu-product__info">
               <span class="menu__price">180 руб.</span>
-              <button class="btn-base menu--btn-base" type="button">В корзину</button>
-            </div>
-          </li>
-          <li class="menu__item mix item-asia">
-            <img class="menu__item-foto" src="./images/menu/item-foto/item_01.png" alt="Фотография: Чизбургер с листьями салата" style="width: 140px; height: 140px;">
-            <h3 class="menu__item-title">Чизбургер с листьями салата</h3>
-            <div class="menu__info">
-              <span class="menu__price">160 руб.</span>
-              <button class="btn-base menu--btn-base" type="button">В корзину</button>
-            </div>
-          </li>
-          <li class="menu__item mix item-asia">
-            <img class="menu__item-foto" src="./images/menu/item-foto/item_02.png" alt="Фотография: Бифбургер" style="width: 140px; height: 140px;">
-            <h3 class="menu__item-title">Бифбургер</h3>
-            <div class="menu__info">
-              <span class="menu__price">190 руб.</span>
-              <button class="btn-base menu--btn-base" type="button">В корзину</button>
-            </div>
-          </li>
-          <li class="menu__item mix item-asia">
-            <img class="menu__item-foto" src="./images/menu/item-foto/item_03.png" alt="Фотография: Королевский чизбургер" style="width: 140px; height: 140px;">
-            <h3 class="menu__item-title">Королевский чизбургер</h3>
-            <div class="menu__info">
-              <span class="menu__price">260 руб.</span>
-              <button class="btn-base menu--btn-base" type="button">В корзину</button>
-            </div>
-          </li>
-          <li class="menu__item mix item-dish">
-            <img class="menu__item-foto" src="./images/menu/item-foto/item_04.png" alt="Фотография: Черный гамбургер" style="width: 140px; height: 140px;">
-            <h3 class="menu__item-title">Черный гамбургер</h3>
-            <div class="menu__info">
-              <span class="menu__price">199 руб.</span>
-              <button class="btn-base menu--btn-base" type="button">В корзину</button>
-            </div>
-          </li>
-          <li class="menu__item mix item-dish">
-            <img class="menu__item-foto" src="./images/menu/item-foto/item_05.png" alt="Фотография: Чикен бургер" style="width: 140px; height: 140px;">
-            <h3 class="menu__item-title">Чикен бургер</h3>
-            <div class="menu__info">
-              <span class="menu__price">180 руб.</span>
-              <button class="btn-base menu--btn-base" type="button">В корзину</button>
+              <button class="btn-base menu-product--btn-base" type="button">В корзину</button>
             </div>
           </li>
         </ul>
@@ -174,10 +178,10 @@
       <div class="footer__top">
         <div class="footer__top-inner">
           <a class="logo" href="#">
-            <img class="logo__img" src="images/logo.png" alt="Логотип" style="width: 200px; height: 39px;">
+            <img class="logo__img" src="images/logo.svg" alt="Логотип" width=200px; height=39px>
           </a>
           <input class="footer__input-email" id="input-email" type="email" placeholder="Ваш email" name="your-email" required="">
-          <button class="btn-base footer--btn-base" type="submit">Подписаться</button>
+          <button class="btn-base footer--btn-base" type="submit" required>Подписаться</button>
         </div>
         <ul class="footer__top-items">
           <li class="footer__top-info">
@@ -217,22 +221,22 @@
             <a class="footer__top-link" href="#">Карта сайта</a>
           </li>
         </ul>
-        <ul class="social">
-          <li class="social__item">
-            <a class="social__contact social__contact--location">ул. Смирнова 2/3</a>
-          </li>
-          <li class="social__item">
-            <a class="social__contact social__contact--phone">79068057043</a>
-          </li>
-          <li class="social__item">
-            <a class="social__contact social__contact--email">support@sfood.com</a>
-          </li>
-          <li class="social__icons">
-            <a class="social__link social__link--facebook" href="#"></a>
-            <a class="social__link social__link--twitter" href="#"></a>
-            <a class="social__link social__link--instagram" href="#"></a>
-          </li>
-        </ul>
+        <div class="social">
+          <a class="social__item social__contact--location" href="https://goo.gl/maps/ioA7CfyJLMKQ87ZS8">ул. Смирнова 2/3</a>
+          <a class="social__item social__contact--phone" href="tel:+79068057043" tel="">79068057043</a>
+          <a class="social__item social__contact--email" href="mailto:support@sfood.com">support@sfood.com</a>
+          <ul class="social__icons">
+            <li class="social__link">
+              <a class="social__link social__link--facebook" href="#"></a>
+            </li>
+            <li class="social__link">
+              <a class="social__link social__link--twitter" href="#"></a>
+            </li>
+            <li class="social__link">
+              <a class="social__link social__link--instagram" href="#"></a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
     <div class="footer__bottom">
