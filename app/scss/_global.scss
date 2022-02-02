@@ -27,117 +27,32 @@ body {
   padding: 0 15px;
 }
 
-.menu {
-  display: flex;
-  align-items: center;
-  font-size: 18px;
+.base-link {
+  font-size: 20px;
+  line-height: 1.5;
+  text-decoration-line: underline;
+  color: $title;
+  transition: 0.33s;
 
-  &__item:nth-last-child(n+3) {
-    margin-right: 48px;
+  &:focus,
+  &:hover,
+  &:active {
+    text-decoration-line: none;
   }
 
-  &__item:nth-last-child(2) {
-    margin-right: 10px;
-  }
-
-  &__icon {
-    width: 44px;
-    height: 44px;
-    position: relative;
-  }
-
-  &__icon--search::before,
-  &__icon--cart::before {
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    top: 12px;
-    left: 11px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  &__icon--search::before {
-    background-image: url('../images/header_icons/search.svg');
-  }
-
-  &__icon--cart::before {
-    background-image: url('../images/header_icons/cart.svg');
-  }
-
-  &__icon-num {
-    position: absolute;
-    font-size: 10px;
-    line-height: 15px;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    top: 6px;
-    right: 4px;
-    text-align: center;
-    background-color: $accent;
-    color: #fff;
-  }
-
-  &__item-link:focus,
-  &__icon:focus {
+  &:focus {
     background-color: rgba(255, 255, 255, 0.01);
     box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
-    border-radius: 5px
+    border-radius: 5px;
   }
 
-  &__item-link {
-    transition: 0.35s;
-
-    &:hover {
-      color: $accent;
-    }
-
-    &:active {
-      text-shadow: 2px 2px 5px rgba(49, 53, 43, 0.5);
-    }
+  &:hover {
+    color: $accent;
   }
 
-  &__icon {
-    transition: 0.3s;
-
-    &:focus {
-      background-color: rgba(255, 122, 80, 0.1);
-    }
-
-    &:hover {
-      border-radius: 5px;
-      background-color: #FF7A50;
-    }
-
-    &--search:hover::before {
-      transition: 0.45s;
-      background-image: url('../images/header_icons/search-white.svg');
-    }
-
-    &--cart:hover::before {
-      background-image: url('../images/header_icons/cart-white.svg');
-    }
-
-    &-num:hover {
-      background-color: #fff;
-      color: $accent;
-    }
-
-    &:active {
-      background-color: #FFF2ED;
-      box-shadow: none;
-    }
-
-    &--search:active::before {
-      transition: 0.45s;
-      background-image: url('../images/header_icons/search.svg');
-    }
-
-    &--cart:active::before {
-      background-image: url('../images/header_icons/cart.svg');
-    }
+  &:active {
+    transition: 0.15s;
+    color: $default;
+    text-shadow: 2px 2px 5px rgba(54, 56, 83, 0.5);
   }
 }
