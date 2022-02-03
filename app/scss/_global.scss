@@ -124,3 +124,114 @@ body {
     text-shadow: 2px 2px 5px rgba(54, 56, 83, 0.5);
   }
 }
+
+.product-card {
+  display: grid;
+  grid-row-gap: 10px;
+  justify-items: center;
+  grid-template-rows: 1fr minmax(36px, auto);
+
+  &__title,
+  &__price {
+    font-size: 15px;
+  }
+
+  &__title {
+    line-height: 1.2;
+    @extend %rubik-400;
+  }
+
+  &__foto:hover {
+    transition: 1s;
+    transform: scale(1.1)
+  }
+
+  &__price {
+    line-height: 1.4;
+    @extend %rubik-500;
+  }
+
+  &__btn--style {
+    padding: 7px 16px;
+  }
+}
+
+.social {
+  display: flex;
+
+  &__icon:not(:last-child) {
+    margin-right: 13px;
+  }
+
+  &__link {
+    display: block;
+    width: 40px;
+    height: 40px;
+    position: relative;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-color: $silver-200;
+    background-position: center;
+    transition: 0.3s;
+
+    &-facebook {
+      background-image: url('../images/footer_icons/ic-facebook.svg');
+    }
+
+    &-twitter {
+      background-image: url('../images/footer_icons/ic-twitter.svg');
+    }
+
+    &-instagram {
+      background-image: url('../images/footer_icons/ic-instagram.svg');
+    }
+
+    &:focus,
+    &:active {
+      background-color: $orange-100;
+    }
+
+    &:focus {
+      transition: 0.2s;
+      box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+    }
+
+    &:hover {
+      background-color: #FF7A50;
+    }
+
+    &:active {
+      box-shadow: none;
+    }
+  }
+}
+
+.icon{
+  &__features {
+
+    &-time::before,
+    &-delivery::before,
+    &-resturent::before {
+      position: absolute;
+      content: '';
+      width: 35px;
+      height: 35px;
+      top: 0;
+      left: 0;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &-time::before {
+      background-image: url('../images/features/icons/time.svg');
+    }
+
+    &-delivery::before {
+      background-image: url('../images/features/icons/delivery.svg');
+    }
+
+    &-resturent::before {
+      background-image: url('../images/features/icons/resturent.svg');
+    }
+  }
+}
