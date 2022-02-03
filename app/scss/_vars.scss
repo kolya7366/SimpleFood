@@ -1,24 +1,27 @@
-$accent: #FF6838;
-$default: #31352B;
-$title: #363853;
-$background: #F9FAFF;
+$orange-900: #ff6838;
+$orange-100: #FFF2ED;
+$silver-200: #ececec;
+$gray: #c2c2c2;
+$darkBlue-900: #363853;
+$dark: #31352b;
+$silver-100: #f9faff;
 
 %rubik-300{
-  font-family: 'Rubik-Light', sans-serif;
+  font-family: 'Rubik';
   font-weight: 300;
 }
 
 %rubik-400{
-  font-family: 'Rubik-Regular', sans-serif;
+  font-family: 'Rubik';
   font-weight: 400;
 }
 
 %rubik-500{
-  font-family: 'Rubik-Medium', sans-serif;
+  font-family: 'Rubik';
   font-weight: 500;
 }
 
 %rubik-700{
-  font-family: 'Rubik-Bold', sans-serif;
+  font-family: 'Rubik';
   font-weight: 700;
 }
