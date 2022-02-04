@@ -206,7 +206,7 @@ body {
   }
 }
 
-.icon{
+.icon {
   &__features {
 
     &-time::before,
@@ -232,6 +232,109 @@ body {
 
     &-resturent::before {
       background-image: url('../images/features/icons/resturent.svg');
+    }
+  }
+}
+
+.slick {
+// не удалось покрасить next, prev. сделал через подмену fill в самом svg 
+  &-prev,
+  &-next,
+  &-dots {
+    position: absolute;
+    display: flex;
+    font-size: 0;
+  }
+
+  &-prev,
+  &-next {
+    bottom: -75px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.01);
+    border: 3px solid $gray;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: center;
+
+    &:focus {
+      box-shadow: 0 0 0 2px rgba(255, 104, 56, 0.7);
+    }
+
+    &:hover {
+      background-color: $orange-100;
+      border: 3px solid #FFAE94;
+      background-repeat: no-repeat;
+      background-size: 30%;
+      background-position: center;
+    }
+
+    &:active {
+      border: none;
+      box-shadow: none;
+      background-size: 23%;
+    }
+  }
+
+  &-next {
+    right: 43.5%;
+    background-image: url('../images/testimonials/icons/next.svg');
+
+    &:hover {
+      background-image: url('../images/testimonials/icons/next-or.svg');
+    }
+  }
+
+  &-prev {
+    left: 43.5%;
+    background-image: url('../images/testimonials/icons/prev.svg');
+
+    &:hover {
+      background-image: url('../images/testimonials/icons/prev-or.svg');
+    }
+  }
+
+  &-dots {
+    bottom: -65px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    & li {
+      cursor: pointer;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: $gray;
+      transition: 0.35s;
+
+      &:hover {
+        background: $orange-100;
+        box-shadow: 0 0 0 2px rgba(255, 122, 80, 0.7);
+      }
+
+      &:active {
+        background-color: $orange-100;
+        box-shadow: none;
+      }
+    }
+
+    & li:not(:last-child) {
+      margin-right: 15px;
+    }
+
+    & .slick-active {
+      background-color: $orange-900;
+
+      &:hover {
+        background: $orange-900;
+        box-shadow: none;
+      }
+
+      &:active {
+        background-color: $orange-100;
+        box-shadow: none;
+      }
     }
   }
 }
