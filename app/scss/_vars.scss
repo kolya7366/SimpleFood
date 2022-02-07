@@ -6,28 +6,21 @@ $darkBlue-900: #363853;
 $dark: #31352b;
 $silver-100: #f9faff;
 
-%rubik-300{
-  font-family: 'Rubik';
-  font-weight: 300;
+$Rubik: 'Rubik';
+
+
+%pos-background {
+  position: absolute;
+  content: '';
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-%rubik-400{
-  font-family: 'Rubik';
-  font-weight: 400;
+%hover-color {
+  filter: invert(42%) sepia(68%) saturate(858%) hue-rotate(332deg) brightness(108%) contrast(101%);
 }
 
-%rubik-400-italic{
-  font-family: 'Rubik';
-  font-weight: 400;
-  font-style: italic;
-}
-
-%rubik-500{
-  font-family: 'Rubik';
-  font-weight: 500;
-}
-
-%rubik-700{
-  font-family: 'Rubik';
-  font-weight: 700;
+%active-color {
+  filter: invert(11%) sepia(5%) saturate(7%) hue-rotate(338deg) brightness(91%) contrast(82%);
 }
